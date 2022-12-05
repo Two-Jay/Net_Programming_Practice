@@ -19,6 +19,8 @@ void error_handling(char const *msg) {
     exit(ERROR);
 }
 
+// 서버 코드
+// 서버에서는 socket() - bind() - listen() - accept() 순으로 진행
 int main(int argc, char **argv) {
     int serv_sock;
     int client_sock;

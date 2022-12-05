@@ -21,6 +21,9 @@ void error_handling(char const *msg) {
     exit(ERROR);
 }
 
+
+// 클라이언트 코드
+// 클라이언트에서는 socket() - connect() 순으로 진행
 int main(int argc, char **argv) {
     int sock;
     struct sockaddr_in serv_addr;
